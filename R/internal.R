@@ -115,8 +115,8 @@ arity <- function(qspray) {
 }
 
 powersMatrix <- function(qspray) {
-  n <- arity(qspray)
-  if(n == -Inf) {
+  n <- numberOfVariables(qspray)
+  if(n == 0L) {
     matrix(NA_integer_, 0L, 0L)
   } else {
     do.call(rbind, lapply(qspray@powers, grow, n = n))
@@ -125,4 +125,8 @@ powersMatrix <- function(qspray) {
 
 isPermutation <- function(x) {
   setequal(x, seq_along(x))
+}
+
+isNamedList <- function(x) {
+  is.list(x) && length(names(x)) == length(x)
 }

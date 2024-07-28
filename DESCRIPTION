@@ -1,7 +1,7 @@
 Package: symbolicQspray
 Title: Multivariate Polynomials with Symbolic Parameters in their
         Coefficients
-Version: 1.0.0
+Version: 1.1.0
 Authors@R: 
     person("Stéphane", "Laurent", , "laurent_step@outlook.fr", role = c("aut", "cre"))
 Description: Introduces the 'symbolicQspray' objects. Such an object
@@ -17,10 +17,10 @@ Description: Introduces the 'symbolicQspray' objects. Such an object
 License: GPL-3
 URL: https://github.com/stla/symbolicQspray
 BugReports: https://github.com/stla/symbolicQspray/issues
-Depends: qspray (>= 3.0.0), ratioOfQsprays
+Depends: qspray (>= 3.1.0), ratioOfQsprays (>= 1.1.0)
 Imports: gmp, methods, Rcpp, utils
 Suggests: testthat (>= 3.0.0)
-LinkingTo: BH, qspray, ratioOfQsprays, Rcpp, RcppArmadillo, RcppCGAL
+LinkingTo: BH, qspray, ratioOfQsprays, Rcpp, RcppCGAL
 Config/testthat/edition: 3
 Encoding: UTF-8
 RoxygenNote: 7.3.1
@@ -29,8 +29,8 @@ Collate: 'JacobiPolynomial.R' 'RcppExports.R' 'creation.R'
         'evaluation.R' 'internal.R' 'symbolicQspray.R' 'queries.R'
         'show.R' 'symmetricPolynomials.R' 'transformation.R'
 NeedsCompilation: yes
-Packaged: 2024-05-01 05:15:19 UTC; SDL96354
+Packaged: 2024-07-27 17:07:10 UTC; User
 Author: Stéphane Laurent [aut, cre]
 Maintainer: Stéphane Laurent <laurent_step@outlook.fr>
 Repository: CRAN
-Date/Publication: 2024-05-02 16:00:02 UTC
+Date/Publication: 2024-07-28 16:50:02 UTC
